@@ -1,0 +1,85 @@
+---
+title: "Grammar of Graphics using `plotnine`"
+jupyter: python3
+---
+
+# Load packages
+
+```{python}
+from plotnine import * 
+from palmerpenguins import load_penguins
+```
+
+# Explore the dataset
+
+Load data
+
+```{python}
+penguins = load_penguins()
+```
+
+First few rows of the dataste
+
+```{python}
+penguins.head()
+```
+
+Dimensions
+
+```{python}
+penguins.shape
+```
+
+Column names
+
+```{python}
+penguins.columns
+```
+
+# Graphics
+
+```{python}
+(ggplot( penguins, aes( x="bill_length_mm", y="bill_depth_mm" ) ) + geom_point() )
+```
+
+Colouring the points according to species types
+
+```{python}
+( ggplot(
+        penguins,
+        aes(
+            x="bill_length_mm",
+            y="bill_depth_mm",
+            color="species"
+        )
+    )
+    + geom_point()
+)
+```
+
+Add labels
+
+```{python}
+( ggplot( penguins, aes( x="bill_length_mm", y="bill_depth_mm", color="species" ) ) + geom_point(size=3) + labs( title="Palmer Penguins", x="Bill length (mm)", y="Bill depth (mm)", color="Species" ) )
+```
+
+Add smooth trend
+
+```{python}
+( ggplot( penguins, aes( x="bill_length_mm", y="bill_depth_mm", color="species" ) ) + geom_point() + geom_smooth() + labs( title="Palmer Penguins", x="Bill length (mm)", y="Bill depth (mm)" ) )
+```
+
+# Note
+
+You can also load the package as follows
+
+```{python}
+import plotnine as p9
+```
+
+Then, you have to use the prefix `p9`
+
+```{python}
+(p9.ggplot(penguins, p9.aes(x="bill_length_mm", y="bill_depth_mm", color="species" )) + p9.geom_point())
+```
+

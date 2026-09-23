@@ -10,35 +10,27 @@ The goal is simple: get familiar with Python, build some confidence, and take th
 
 # Day 1.1: Installing Python
 
-In this video, you’ll see  how to download and install Python on a Windows computer, set up the environment correctly, and launch Jupyter Notebook without any confusion. This guide is perfect if you're completely new to programming, data science, or Python development.
+In this video, you’ll see how to download and install Python on a Windows computer, set up the environment correctly, and launch Jupyter Notebook without any confusion. This guide is perfect if you're completely new to programming, data science, or Python development.
 
 We’ll cover:
 
-  i. Downloading and installing Python on Windows
+i.  Downloading and installing Python on Windows
 
-  ii. Setting up PATH and verifying installation
-  
-  iii. Installing Jupyter Notebook using pip
+ii. Setting up PATH and verifying installation
 
-  iv. Opening Jupyter Notebook for the first time
+iii. Installing Jupyter Notebook using pip
 
-  v. Creating and running your first notebook
+iv. Opening Jupyter Notebook for the first time
+
+v.  Creating and running your first notebook
 
 By the end of this tutorial, you’ll have a fully working Python setup and be ready to start coding in Jupyter Notebook.
 
-{{< video https://youtu.be/wSvnfsplwYw?si=u8oToMJFlXhCd_-Y
-    width="800"
-    height="450"
-    title="Python Jumpstart – Day 1.1"
->}}
-
-
+{{< video https://youtu.be/wSvnfsplwYw?si=u8oToMJFlXhCd_-Y width="800" height="450" title="Python Jumpstart – Day 1.1" >}}
 
 # Day 1.2: Getting Started with Jupyter Notebook
 
+{{< video https://youtu.be/6EZvhwHHuCQ?si=xutSYICn6EgJHn-Y width="800" height="450" title="Python Jumpstart – Day 1.2" >}}
 
-{{< video https://youtu.be/6EZvhwHHuCQ?si=xutSYICn6EgJHn-Y
-    width="800"
-    height="450"
-    title="Python Jumpstart – Day 1.2"
->}}
+# Day 2: Data Visualisation with `plotnine`
+
