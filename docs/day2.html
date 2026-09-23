@@ -189,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="load-packages" class="level1">
 <h1>Load packages</h1>
-<div id="47b62c58" class="cell" data-execution_count="1">
+<div id="c20efd3d" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -197,13 +197,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="explore-the-dataset" class="level1">
 <h1>Explore the dataset</h1>
 <p>Load data</p>
-<div id="8821dabf" class="cell" data-execution_count="2">
+<div id="09c2d92e" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> load_penguins()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>First few rows of the dataste</p>
-<div id="caab0a24" class="cell" data-execution_count="3">
+<div id="9f5dd2a3" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>penguins.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="58">
+<div class="cell-output cell-output-display" data-execution_count="69">
 <div>
 
 
@@ -284,16 +284,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Dimensions</p>
-<div id="9538fb7e" class="cell" data-execution_count="4">
+<div id="d8040224" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>penguins.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="59">
+<div class="cell-output cell-output-display" data-execution_count="70">
 <pre><code>(344, 8)</code></pre>
 </div>
 </div>
 <p>Column names</p>
-<div id="faddcfac" class="cell" data-execution_count="5">
+<div id="6aa32889" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>penguins.columns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="60">
+<div class="cell-output cell-output-display" data-execution_count="71">
 <pre><code>Index(['species', 'island', 'bill_length_mm', 'bill_depth_mm',
        'flipper_length_mm', 'body_mass_g', 'sex', 'year'],
       dtype='str')</code></pre>
@@ -302,12 +302,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="graphics" class="level1">
 <h1>Graphics</h1>
-<div id="09d4e05e" class="cell" data-execution_count="6">
+<div id="79517922" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(ggplot( penguins, aes( x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"bill_depth_mm"</span> ) ) <span class="op">+</span> geom_point() )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\layer.py:374: PlotnineWarning: geom_point : Removed 2 rows containing missing values.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="61">
+<div class="cell-output cell-output-display" data-execution_count="72">
 <div>
 <figure class="figure">
 <p><img src="day2_files/figure-html/cell-7-output-2.png" width="672" height="480" class="figure-img"></p>
@@ -316,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Colouring the points according to species types</p>
-<div id="0870952d" class="cell" data-execution_count="7">
+<div id="ceb1ed1e" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>( ggplot(</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>        penguins,</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        aes(</span>
@@ -330,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stderr">
 <pre><code>C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\layer.py:374: PlotnineWarning: geom_point : Removed 2 rows containing missing values.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="62">
+<div class="cell-output cell-output-display" data-execution_count="73">
 <div>
 <figure class="figure">
 <p><img src="day2_files/figure-html/cell-8-output-2.png" width="672" height="480" class="figure-img"></p>
@@ -339,12 +339,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Add labels</p>
-<div id="b247671a" class="cell" data-execution_count="8">
+<div id="ba7f6bd7" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>( ggplot( penguins, aes( x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"bill_depth_mm"</span>, color<span class="op">=</span><span class="st">"species"</span> ) ) <span class="op">+</span> geom_point(size<span class="op">=</span><span class="dv">3</span>) <span class="op">+</span> labs( title<span class="op">=</span><span class="st">"Palmer Penguins"</span>, x<span class="op">=</span><span class="st">"Bill length (mm)"</span>, y<span class="op">=</span><span class="st">"Bill depth (mm)"</span>, color<span class="op">=</span><span class="st">"Species"</span> ) )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\layer.py:374: PlotnineWarning: geom_point : Removed 2 rows containing missing values.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="63">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <div>
 <figure class="figure">
 <p><img src="day2_files/figure-html/cell-9-output-2.png" width="672" height="480" class="figure-img"></p>
@@ -353,13 +353,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Add smooth trend</p>
-<div id="60f8d74a" class="cell" data-execution_count="9">
+<div id="407f2f2f" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>( ggplot( penguins, aes( x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"bill_depth_mm"</span>, color<span class="op">=</span><span class="st">"species"</span> ) ) <span class="op">+</span> geom_point() <span class="op">+</span> geom_smooth() <span class="op">+</span> labs( title<span class="op">=</span><span class="st">"Palmer Penguins"</span>, x<span class="op">=</span><span class="st">"Bill length (mm)"</span>, y<span class="op">=</span><span class="st">"Bill depth (mm)"</span> ) )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\stats\smoothers.py:342: PlotnineWarning: Confidence intervals are not yet implemented for lowess smoothings.
 C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\layer.py:374: PlotnineWarning: geom_point : Removed 2 rows containing missing values.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="64">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <div>
 <figure class="figure">
 <p><img src="day2_files/figure-html/cell-10-output-2.png" width="672" height="480" class="figure-img"></p>
@@ -371,16 +371,16 @@ C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine
 <section id="note" class="level1">
 <h1>Note</h1>
 <p>You can also load the package as follows</p>
-<div id="88abe7b6" class="cell" data-execution_count="10">
+<div id="2741a657" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotnine <span class="im">as</span> p9</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Then, you have to use the prefix <code>p9</code></p>
-<div id="631ee8c2" class="cell" data-execution_count="11">
+<div id="5e5e418f" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>(p9.ggplot(penguins, p9.aes(x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"bill_depth_mm"</span>, color<span class="op">=</span><span class="st">"species"</span> )) <span class="op">+</span> p9.geom_point())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>C:\Users\DELL\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\plotnine\layer.py:374: PlotnineWarning: geom_point : Removed 2 rows containing missing values.</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="66">
+<div class="cell-output cell-output-display" data-execution_count="77">
 <div>
 <figure class="figure">
 <p><img src="day2_files/figure-html/cell-12-output-2.png" width="672" height="480" class="figure-img"></p>
