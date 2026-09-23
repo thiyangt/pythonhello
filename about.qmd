@@ -1,0 +1,17 @@
+---
+title: "About"
+---
+
+Python Jumpstart is a short, self-paced learning series created in response to students’ feedback and requests to learn Python.
+
+Although Python is not currently included in the curriculum, having basic Python skills has become increasingly valuable in the job market, particularly in data analysis, data science, and related fields. This course is designed to give students a simple and practical starting point without adding pressure to their regular studies.
+
+The idea is simple: spend just 20 minutes a day during your study leave.
+
+You don't need to become a Python expert in five days. The goal is to build familiarity, confidence, and motivation to continue learning. Each day introduces a small set of concepts and practical examples that you can work through at your own pace.
+
+20 minutes a day. 5 days. One small step towards learning Python.
+
+Start small. Code a little. Keep learning. 🐍
+
+Dr Thiyanga S. Talagala
