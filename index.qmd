@@ -8,7 +8,7 @@ If you want some extra practice, you can also try the exercises provided in the 
 
 The goal is simple: get familiar with Python, build some confidence, and take the first step towards learning a useful skill.
 
-# Day 1: Installing Python
+# Day 1.1: Installing Python
 
 In this video, you’ll see  how to download and install Python on a Windows computer, set up the environment correctly, and launch Jupyter Notebook without any confusion. This guide is perfect if you're completely new to programming, data science, or Python development.
 
@@ -29,5 +29,16 @@ By the end of this tutorial, you’ll have a fully working Python setup and be r
 {{< video https://youtu.be/wSvnfsplwYw?si=u8oToMJFlXhCd_-Y
     width="800"
     height="450"
-    title="Python Jumpstart – Day 1"
+    title="Python Jumpstart – Day 1.1"
+>}}
+
+
+
+# Day 1.2: Getting Started with Jupyter Notebook
+
+
+{{< video https://youtu.be/6EZvhwHHuCQ?si=xutSYICn6EgJHn-Y
+    width="800"
+    height="450"
+    title="Python Jumpstart – Day 1.2"
 >}}
