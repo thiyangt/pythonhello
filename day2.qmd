@@ -1,7 +1,10 @@
 ---
-title: "Grammar of Graphics using `plotnine`"
+title: "Day 2: Grammar of Graphics using plotnine"
 jupyter: python3
 ---
+
+{{< video https://youtu.be/FFoF2mjQHV8?si=PRFoOYYEXOCUn5Xm width="600" height="250" title="Python Jumpstart – Day 1.2" >}}
+
 
 # Load packages
 
@@ -82,4 +85,5 @@ Then, you have to use the prefix `p9`
 ```{python}
 (p9.ggplot(penguins, p9.aes(x="bill_length_mm", y="bill_depth_mm", color="species" )) + p9.geom_point())
 ```
+
 

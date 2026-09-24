@@ -36,3 +36,5 @@ By the end of this tutorial, you’ll have a fully working Python setup and be r
 
 Go to the script [here](https://thiyangt.github.io/pythonhello/day2.html)
 
+
+{{< video https://youtu.be/FFoF2mjQHV8?si=PRFoOYYEXOCUn5Xm width="800" height="450" title="Python Jumpstart – Day 1.2" >}}
