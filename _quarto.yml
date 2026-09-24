@@ -10,6 +10,8 @@ website:
         text: Home
       - about.qmd
       - day2.qmd
+      
+google-analytics: "G-VWGJK762PJ"
 
 format:
   html:
