@@ -1,0 +1,129 @@
+---
+title: "Data Wrangling: R vs Python Comparison "
+format: html
+editor: visual
+jupyter: python3
+---
+
+# Create a `dataframe`
+
+**R**
+
+``` r
+
+df <- data.frame(
+  name = c("A", "B", "C", "D", "E", "F"),
+  age = c(22, 25, 21, 24, 27, 23),
+  gender = c("Male", "Male", "Male", "Female", "Female", "Male"),
+  study_hours = c(10, 15, 8, 12, 18, 9),
+  marks = c(65, 78, 55, 82, 91, 70)
+)
+
+df
+```
+
+**Python**
+
+```{python}
+import pandas as pd
+
+data = {
+    "name": ["A", "B", "C", "D", "E", "F"],
+    "age": [22, 25, 21, 24, 27, 23],
+    "gender": ["Male", "Male", "Male", "Female", "Female", "Male"],
+    "study_hours": [10, 15, 8, 12, 18, 9],
+    "marks": [65, 78, 55, 82, 91, 70]
+}
+
+df = pd.DataFrame(data)
+df
+```
+
+# filter
+
+**R**
+
+``` r
+df |>
+  filter(marks > 70)
+```
+
+**Python**
+
+```{python}
+
+df[df["marks"] > 70]
+```
+
+# Select columns
+
+**R**
+
+``` r
+df |>
+  select(name, age, marks)
+```
+
+**Python**
+
+```{python}
+df[["name", "age", "marks"]]
+
+```
+
+# Mutate
+
+``` r
+df |>
+  mutate(pass = marks >= 50)
+```
+
+```{python}
+df["pass"] = df["marks"] >= 50
+```
+
+# Sort
+
+**R**
+
+``` r
+df |>
+  arrange(desc(marks))
+```
+
+**Python**
+
+```{python}
+df.sort_values("marks", ascending=False)
+```
+
+# Rename
+
+``` r
+df |>
+  rename(hours_studied = study_hours)
+```
+
+```{python}
+df.rename(columns={"study_hours": "hours_studied"})
+```
+
+# Combine Operations
+
+**R**
+
+``` r
+df |>
+  filter(gender == "Female") |>
+  select(name, marks) |>
+  arrange(desc(marks))
+```
+
+**Python**
+
+```{python}
+df[df["gender"] == "Female"][["name", "marks"]].sort_values(
+    "marks",
+    ascending=False
+)
+```
