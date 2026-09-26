@@ -1,5 +1,5 @@
 ---
-title: "Study Materials"
+title: "Day 1: Study Materials"
 ---
 
 All you need to do is spend 20 minutes each day watching the video. That's it.
@@ -35,6 +35,5 @@ By the end of this tutorial, you’ll have a fully working Python setup and be r
 # Day 2: Data Visualisation with `plotnine`
 
 Go to the script [here](https://thiyangt.github.io/pythonhello/day2.html)
-
 
 {{< video https://youtu.be/FFoF2mjQHV8?si=PRFoOYYEXOCUn5Xm width="800" height="450" title="Python Jumpstart – Day 1.2" >}}
