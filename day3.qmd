@@ -60,7 +60,7 @@ df[df["marks"] > 70]
 **R**
 
 ``` r
-df |>
+df <- df |>
   select(name, age, marks)
 ```
 
@@ -80,6 +80,7 @@ df |>
 
 ```{python}
 df["pass"] = df["marks"] >= 50
+df
 ```
 
 # Sort
