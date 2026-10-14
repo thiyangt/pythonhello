@@ -5,6 +5,9 @@ editor: source
 jupyter: python3
 ---
 
+
+{{< video https://youtu.be/knuAHAXN9bA?si=hfHuVlXT9_uiScFt width="600" height="250" title="Python Jumpstart – Day 1.2" >}}
+
 # Create a `dataframe`
 
 **R**
@@ -129,4 +132,3 @@ df[df["gender"] == "Female"][["name", "marks"]].sort_values(
 )
 ```
 
-{{< video https://youtu.be/knuAHAXN9bA?si=hfHuVlXT9_uiScFt width="600" height="250" title="Python Jumpstart – Day 1.2" >}}
